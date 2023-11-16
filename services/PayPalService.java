@@ -9,6 +9,6 @@ public class PayPalService implements OnlinePaymentService {
 
     @Override
     public double interest(double amount, int month) {
-        return (amount*0.01)*month;
+        return amount*0.01*month;
     }
 }

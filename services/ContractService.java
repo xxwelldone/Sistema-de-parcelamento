@@ -22,7 +22,7 @@ public class ContractService {
             Date month = calendar.getTime();
 
             double interest = paymentService.interest(perInstallment, i);
-            double fee = paymentService.paymentFree(perInstallment);
+            double fee = paymentService.paymentFree(perInstallment+interest);
             double amount = perInstallment + interest + fee;
             c.getInstallment().add(new Installments(month, amount));
 
