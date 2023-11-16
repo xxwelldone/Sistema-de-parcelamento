@@ -24,7 +24,7 @@ public class ContractService {
             double interest = paymentService.interest(perInstallment, i);
             double fee = paymentService.paymentFree(perInstallment);
             double amount = perInstallment + interest + fee;
-            c.addInstallment(new Installments(month, amount));
+            c.getInstallment().add(new Installments(month, amount));
 
         }
 

@@ -13,9 +13,6 @@ public class Contract {
     private double totalAmount;
     private List<Installments> installments = new ArrayList<>();
 
-    public void addInstallment(Installments i) {
-        installments.add(i);
-    }
 
     public int getNumber() {
         return number;
