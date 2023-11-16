@@ -21,7 +21,7 @@ public class Contract {
         return number;
     }
 
-    public List getInstallment() {
+    public List<Installments> getInstallment() {
         return installments;
     }
 
